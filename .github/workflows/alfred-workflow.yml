@@ -16,6 +16,7 @@ jobs:
         id: builder
         uses: almibarss/build-alfred-workflow@v1
         with:
+          workflow_dir: dist
           exclude_patterns: 'go.mod go.sum *.go'
 
       - name: Release
