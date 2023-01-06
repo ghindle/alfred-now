@@ -16,9 +16,7 @@ jobs:
         id: builder
         uses: almibarss/build-alfred-workflow@v1
         with:
-          workflow_dir: src
           exclude_patterns: 'go.mod go.sum *.go'
-          custom_version: ${{ github.ref_name }}
 
       - name: Release
         uses: softprops/action-gh-release@v1
